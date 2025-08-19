@@ -1,8 +1,8 @@
 *** Settings ***
 Resource    ../../resources/api/usuarios.resource
-Resource    ../../resources/api/setup.resource
+Resource    ../../resources/api/api_setup.resource
 Library     FakerLibrary
-Suite Setup     Create Users And Sessions
+Suite Setup     Criar Usuários e Sessões
 
 
 *** Test Cases ***

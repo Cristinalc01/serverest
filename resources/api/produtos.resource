@@ -7,18 +7,22 @@ Library    JSONLibrary
 *** Keywords ***
 
 Registrar Produto
-    [Arguments]    ${token}    ${name}    ${price}    ${desc}    ${quantity}    
+    #
+    [Documentation]    Registra um novo produto no sistema.
+    [Arguments]    ${token}    ${name}    ${price}    ${desc}    ${quantity}
     ${headers}=    Create Dictionary    Authorization=${token}
     ${body}=    Create Dictionary    nome=${name}    preco=${price}    descricao=${desc}    quantidade=${quantity}
     ${resp}=    POST On Session    api    /produtos    headers=${headers}    json=${body}    expected_status=anything
     RETURN    ${resp}
 
 Obter Produto Por Id
+    [Documentation]    Obtém os detalhes de um produto pelo seu ID.
     [Arguments]    ${id}
     ${resp}=    GET On Session    api    /produtos/${id}    expected_status=anything
     RETURN    ${resp}
 
 Atualizar Produto
+    [Documentation]    Atualiza os detalhes de um produto existente.
     [Arguments]    ${token}    ${product_id}    ${name}=None    ${price}=None    ${desc}=None    ${quantity}=None
     ${body}=    Create Dictionary
     Run Keyword If    '${name}' != 'None'    Set To Dictionary    ${body}    nome=${name}
@@ -30,6 +34,7 @@ Atualizar Produto
     RETURN    ${resp}
 
 Deletar Produto
+    [Documentation]    Deleta um produto existente pelo seu ID.
     [Arguments]    ${token}    ${id}
     ${headers}=    Create Dictionary    Authorization=${token}
     ${resp}=    DELETE On Session    api    /produtos/${id}    headers=${headers}    expected_status=anything

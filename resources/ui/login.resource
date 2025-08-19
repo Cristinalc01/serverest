@@ -12,6 +12,7 @@ ${LOGOUT_BUTTON}  css=[data-testid="logout"]
 
 *** Keywords ***
 Logar no Serverest
+    [Documentation]    Faz o login no site Serverest com as credenciais fornecidas.
     [Arguments]    ${email}    ${password}
     Open Browser    ${LOGIN_URL}    Chrome
     Input Text    ${CAMPO_EMAIL}    ${email}
@@ -20,5 +21,6 @@ Logar no Serverest
     Wait Until Page Contains Element    ${LOGOUT_BUTTON}    timeout=10s
 
 Deslogar do Serverest
+    [Documentation]    Faz o logout do site Serverest.
     Click Button    ${LOGOUT_BUTTON}
     Wait Until Page Contains Element    ${LOGIN_BUTTON}    timeout=10s

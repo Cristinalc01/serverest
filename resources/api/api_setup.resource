@@ -8,7 +8,8 @@ Resource    ./usuarios.resource
 ${BASE_API}    https://serverest.dev
 
 *** Keywords ***
-Create Users And Sessions
+Criar Usuários e Sessões
+    [Documentation]    Cria usuários comuns e admin para testes, inicializando sessões e armazenando tokens e dados em variáveis de suíte.
     Create Session    api    ${BASE_API}
     # Usuário comum
     ${user_firstname}=    FakerLibrary.First Name

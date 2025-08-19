@@ -10,7 +10,6 @@ ${INVALID_PASS}   senha_invalida
 
 *** Test Cases ***
 CT01-Logar com Credenciais Válidas
-
     [Documentation]    Testa o login com credenciais válidas
     Logar no Serverest    ${VALID_USER}    ${VALID_PASS}
 
