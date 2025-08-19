@@ -22,7 +22,7 @@ Criar Usuários e Sessões
     Set Suite Variable    ${USER_TOKEN}    ${user_token} 
     Set Suite Variable    ${USER_ID}    ${user_id}
     Set Suite Variable    ${USER_EMAIL}    ${user_email}    
-    Set Suite Variable    ${USER_PASSWORD}    ${user_password}    
+    Set Suite Variable    ${USER_PASSWORD}    ${user_password}
     # Usuário admin
     ${admin_firstname}=    FakerLibrary.First Name
     ${admin_email}=    FakerLibrary.Email

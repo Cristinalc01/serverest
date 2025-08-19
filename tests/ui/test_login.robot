@@ -17,8 +17,8 @@ CT01-Logar com Credenciais Válidas
 
 CT02-Logar com Credenciais Inválidas
     [Documentation]    Testa login com credenciais inválidas e valida mensagem de erro.
-    Logar no Serverest    ${INVALID_USER}    ${INVALID_PASS}    False
+    Logar no Serverest    ${USER_EMAIL}    ${USER_PASSWORD}
 CT03-Deslogar
     [Documentation]    Testa o logout do usuário.
-    Logar no Serverest    ${INVALID_USER}    ${INVALID_PASS}    False
+    Logar no Serverest    ${USER_EMAIL}    ${USER_PASSWORD}
     Deslogar do Serverest
