@@ -1,0 +1,51 @@
+# ===================================
+# AMBIENTE PYTHON / ROBOT FRAMEWORK
+# ===================================
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs e resultados do Robot Framework
+output.xml
+log.html
+report.html
+*.log
+*.tmp
+*.tsv
+*.csv
+
+# ===================================
+# FERRAMENTAS / IDEs
+# ===================================
+
+# VSCode / PyCharm / etc
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MacOS
+.DS_Store
+
+# ===================================
+# BUILD E DEPENDÊNCIAS
+# ===================================
+
+# Arquivos de distribuição
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Wheels e cache do pip
+pip-wheel-metadata/
+__pypackages__/
