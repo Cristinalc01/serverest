@@ -9,7 +9,7 @@ ${CAMPO_EMAIL}     css=[data-testid="email"]
 ${CAMPO_SENHA}     css=[data-testid="senha"]
 ${LOGIN_BUTTON}    css=[data-testid="entrar"]
 ${LOGOUT_BUTTON}   css=[data-testid="logout"]
-${ERRO_LOGIN}      Usuário ou senha inválidos
+${ERRO_LOGIN}      Email e/ou senha inválidos
 
 *** Keywords ***
 Logar no Serverest
