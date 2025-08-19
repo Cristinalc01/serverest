@@ -23,6 +23,8 @@ report.html
 *.tmp
 *.tsv
 *.csv
+*.png
+
 
 # ===================================
 # FERRAMENTAS / IDEs
