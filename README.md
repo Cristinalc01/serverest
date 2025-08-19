@@ -87,12 +87,6 @@ Após a execução, são gerados automaticamente:
 - `log.html` — Log detalhado da execução
 - `output.xml` — Saída em XML para integração
 
-## Contribuição
-
-1. Fork este repositório
-2. Crie uma branch (`git checkout -b feature/nova-feature`)
-3. Commit suas alterações
-4. Envie um Pull Request
 
 ## Referências
 
