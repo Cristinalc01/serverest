@@ -11,7 +11,6 @@ Este projeto utiliza **Robot Framework** para automação de testes na API Serve
 - [Estrutura dos Testes](#estrutura-dos-testes)
 - [Exemplo de Caso de Teste](#exemplo-de-caso-de-teste)
 - [Relatórios](#relatórios)
-- [Contribuição](#contribuição)
 - [Referências](#referências)
 
 ## Estrutura do Projeto
