@@ -14,5 +14,5 @@ CT01-Logar com Credenciais Válidas
     Logar no Serverest    ${VALID_USER}    ${VALID_PASS}
 
 CT02-Logar com Credenciais Inválidas
-    [Documentation]    Testa o login com credenciais inválidas
-    Logar no Serverest    ${INVALID_USER}    ${INVALID_PASS}
+    [Documentation]    Testa login com credenciais inválidas e valida mensagem de erro.
+    Logar no Serverest    ${INVALID_USER}    ${INVALID_PASS}    False
