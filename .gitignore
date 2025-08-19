@@ -16,6 +16,7 @@ __pycache__/
 
 # Logs e resultados do Robot Framework
 output.xml
+interactive_console_output.xml
 log.html
 report.html
 *.log
